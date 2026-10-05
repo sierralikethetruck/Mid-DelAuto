@@ -598,6 +598,41 @@ h2 {
     gap: 0.8rem;
 }
 
+.website-qr {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.website-qr a {
+    display: block;
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: #fff;
+}
+
+.website-qr img {
+    width: 128px;
+    aspect-ratio: 1;
+}
+
+.website-qr p {
+    display: grid;
+    gap: 0.25rem;
+    margin: 0;
+}
+
+.website-qr strong {
+    color: var(--text);
+}
+
+.website-qr span {
+    color: var(--text-soft);
+    overflow-wrap: anywhere;
+}
+
 .contact-form {
     background: linear-gradient(180deg, rgba(17, 24, 33, 0.98), rgba(10, 17, 25, 0.98));
     border: 1px solid var(--border);
