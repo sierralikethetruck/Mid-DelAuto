@@ -278,7 +278,7 @@ h2 {
     padding: 0;
     margin: 2rem 0 0;
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: minmax(0, max-content);
     gap: 1rem;
 }
 
@@ -314,7 +314,7 @@ h2 {
     width: min(34rem, 100%);
     height: 28rem;
     border-radius: 1.75rem;
-    background: url('https://images.unsplash.com/photo-1489824904134-891ab64532f1?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    background: url('assets/storefront-hero.jpg') center 54%/cover no-repeat;
     border: 1px solid rgba(255,255,255,0.12);
     box-shadow: var(--shadow);
     overflow: hidden;
@@ -386,35 +386,6 @@ h2 {
 .badge-bottom {
     bottom: 1.7rem;
     left: 1rem;
-}
-
-.trust-bar {
-    padding: 1rem 0 0;
-}
-
-.trust-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 1rem;
-}
-
-.trust-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.65rem;
-    padding: 1rem 1.2rem;
-    border-radius: 1rem;
-    background: rgba(17,24,33,0.72);
-    border: 1px solid var(--border);
-    color: var(--text);
-    font-weight: 700;
-    text-align: center;
-}
-
-.trust-item span {
-    color: var(--secondary);
-    font-size: 1.1rem;
 }
 
 .section-heading {
@@ -536,6 +507,15 @@ h2 {
     margin-bottom: 0.25rem;
 }
 
+.shop-photo-secondary {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: center 55%;
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+}
+
 .accent-box {
     background: linear-gradient(135deg, rgba(27,77,143,0.08), rgba(239,108,57,0.08));
 }
@@ -559,21 +539,6 @@ h2 {
     color: var(--primary);
     font-weight: 800;
     margin-bottom: 1rem;
-}
-
-.review-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.review-card {
-    padding: 1.6rem;
-    margin: 0;
-}
-
-.review-card footer {
-    margin-top: 1.2rem;
-    color: var(--primary);
-    font-weight: 700;
 }
 
 .contact-grid {
@@ -676,7 +641,6 @@ h2 {
     .split-layout,
     .contact-grid,
     .card-grid,
-    .review-grid,
     .steps-grid,
     .trust-grid {
         grid-template-columns: 1fr 1fr;
@@ -695,7 +659,6 @@ h2 {
 
 @media (max-width: 640px) {
     .card-grid,
-    .review-grid,
     .steps-grid,
     .hero-stats,
     .trust-grid {
